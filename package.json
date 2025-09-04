@@ -2,6 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/app/server.ts",
     "seed:admin": "ts-node-dev --transpile-only src/seed/seed-admin.ts",
