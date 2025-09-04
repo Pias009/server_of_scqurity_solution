@@ -17,7 +17,7 @@ export class ProductService {
     if (isProductExist) throw new AppError('Product with this slug already exists', 409);
 
     if (input.subCategoryId === '') {
-      input.subCategoryId = null;
+      input.subCategoryId = undefined;
     }
 
     const product = await ProductModel.create(input);
