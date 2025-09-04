@@ -1,9 +1,9 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "dist/app/server.js",
+  "main": "../dist/app/server.js",
   "scripts": {
-    "start": "node dist/app/server.js",
+    "start": "node ../dist/app/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/app/server.ts",
     "seed:admin": "ts-node-dev --transpile-only src/seed/seed-admin.ts",
     "pretty": "npx prettier --write .",
