@@ -82,7 +82,7 @@ export class ProductService {
           });
           product.images.push({ url: result.secure_url, publicId: result.public_id });
         } catch (err) {
-          console.warn(`Failed to upload image "${file.originalname}":`, err);
+          console.warn(`Failed to upload image "${file.originalname}"`, err);
         }
       }
     }
